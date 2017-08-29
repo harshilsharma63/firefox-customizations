@@ -29,3 +29,17 @@
   		border-radius: 0px 4px 4px 0px;
 	}
 }
+
+@-moz-document url-prefix(about:newtab) {
+	body {
+  		background: linear-gradient(46deg, #D100F9 0%, #00EF78 100%) !important;
+	}
+
+	.section-title {
+  		color: rgb(32, 32, 32) !important;
+	}
+
+	.search-wrapper {
+  		height: 30px !important;
+	}
+}
