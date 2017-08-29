@@ -1,5 +1,8 @@
 # firefox-customizations
 
+about:home
+![about:home](about_home.jpg?raw=true "about:home")
+
 userContent.css
 ****************************************
 
