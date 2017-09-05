@@ -1,45 +1,76 @@
 @-moz-document url-prefix(about:home) {
-	#launcher {
-  		display: none !important;
-	}
+  #launcher {
+      display: none !important;
+  }
 
-	#searchIconAndTextContainer {
-  		height: 30px;
-	}
+  #searchIconAndTextContainer {
+      height: 30px;
+  }
 
-	#searchIcon {
-  		width: 20px;
-  		height: 20px;
+  #searchIcon {
+      width: 20px;
+      height: 20px;
   
-  		top: 50%;
-  		transform: translateY(-50%);
-  		margin-left: 2%;
-	}
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 2%;
+  }
 
-	#searchText {
-  		font-size: 90%;
-  		border-radius: 4px 0px 0px 4px;
-	}
+  #searchText {
+      font-size: 90%;
+      border-radius: 4px 0px 0px 4px;
+  }
 
-	body {
-  		background: linear-gradient(46deg, #D100F9 0%, #00EF78 100%);
-	}
+  body {
+      background: linear-gradient(46deg, #D100F9 0%, #00EF78 100%);
+  }
 
-	#searchSubmit {
-  		border-radius: 0px 4px 4px 0px;
-	}
+  #searchSubmit {
+      border-radius: 0px 4px 4px 0px !important; 
+  }
+
+  #searchSubmit {
+    margin-left: -49px !important;
+      background: #0060DF url("chrome://browser/skin/forward.svg") no-repeat center center !important;
+      fill: #fff !important;
+      box-shadow: none !important;
+  }
+
+  #searchText {
+      border-color: #0060DF !important;
+      box-shadow: 0 0 0 2px #0060DF !important;
+      pointer-events: none !important;
+  }
+
+  #searchText:focus + #searchSubmit {
+      background: #0060DF url("chrome://browser/skin/forward.svg") no-repeat center center !important;
+      border: none !important;
+      box-shadow: none !important;
+  }
+
+  #searchText, #searchText:focus {
+      border-radius: 4px !important;
+  }
+
+  #searchIcon {
+      pointer-events: none  !important;
+  }
+
+  #searchText[autofocus] + #searchSubmit {
+  	border-color: transparent !important;
+  }
 }
 
 @-moz-document url-prefix(about:newtab) {
-	body {
-  		background: linear-gradient(46deg, #D100F9 0%, #00EF78 100%) !important;
-	}
+  body {
+      background: linear-gradient(46deg, #D100F9 0%, #00EF78 100%) !important;
+  }
 
-	.section-title {
-  		color: rgb(32, 32, 32) !important;
-	}
+  .section-title {
+      color: rgb(32, 32, 32) !important;
+  }
 
-	.search-wrapper {
-  		height: 30px !important;
-	}
+  .search-wrapper {
+      height: 30px !important;
+  }
 }
